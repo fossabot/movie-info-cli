@@ -1,0 +1,19 @@
+{
+  "name": "movie-info",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "commander": "^2.15.1",
+    "dotenv": "^5.0.1",
+    "inquirer": "^5.2.0"
+  }
+}
