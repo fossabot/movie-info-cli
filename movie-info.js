@@ -15,21 +15,50 @@ program
 
 program.parse(process.argv);
 
-if (program.id) {  
-  if (!!program.more) {
+const getMovie = (with_images = false, with_casts = false) => {
+  var movie;
 
-  } else {
-    axios
-      .get(process.env.API_GET_MOVIE_DETAIL, {
-        params: {
-          movie_id: program.id,
-          with_images: true,
-          with_cast: true
+  axios
+    .get(process.env.API_GET_MOVIE_DETAIL, {
+      params: {
+        movie_id: program.id,
+        with_images: with_images,
+        with_cast: with_casts
+      }
+    })
+    .then(response => {
+      movie = response.data.data.movie;
+      console.log(movie);
+    })
+    .catch(error => console.log(error));
+  
+  return movie;
+};
+
+if (program.id) {
+  let with_images = false;
+  let with_casts = false;
+
+  if (!!program.more) {
+    inquirer
+      .prompt([
+        {
+          type: "confirm",
+          name: "with_images",
+          message: "With image?",
+          default: false
+        },
+        {
+          type: "confirm",
+          name: "with_casts",
+          message: "With casts?",
+          default: false
         }
-      })
-      .then(response => {
-        JSON.stringify(response.data["data"]["movie"], null, " ");
-      })
-      .catch(error => console.log(error));
+      ])
+      .then(answers => {
+        getMovie(answers.with_images, answers.with_casts);
+      });
+  } else {
+    getMovie();
   }
 }
