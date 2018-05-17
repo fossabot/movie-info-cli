@@ -1,14 +1,22 @@
 {
-  "name": "movie-info",
+  "name": "movie-info-cli",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple CLI to get movie information",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "homepage": "https://github.com/phongduong/movie-info#README.md",
+  "bugs": {
+    "url": "https://github.com/phongduong/movie-info/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phongduong/movie-info.git"
+  },
+  "author": "phongduong",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.18.0",

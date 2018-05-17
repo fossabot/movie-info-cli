@@ -50,7 +50,7 @@ const printTable = (movieId, withCasts = false) => {
 
 if (program.yes) {
   console.log(`With casts: true`)
-  printTable(movieId, true);
+  printTable(movieId, false);
 } else {
   inquirer
     .prompt([
