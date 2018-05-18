@@ -1,6 +1,6 @@
 {
   "name": "movie-info-cli",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Simple CLI to get movie information",
   "main": "index.js",
   "scripts": {
