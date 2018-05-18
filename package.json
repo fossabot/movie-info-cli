@@ -17,6 +17,11 @@
     "url": "https://github.com/phongduong/movie-info.git"
   },
   "author": "phongduong",
+  "bin": {
+    "movie-list": "./bin/list-global.js",
+    "movie-detail": "./bin/detail-global.js"
+  },
+  "preferGlobal": true,
   "license": "ISC",
   "dependencies": {
     "axios": "^0.18.0",
