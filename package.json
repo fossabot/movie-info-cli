@@ -22,7 +22,7 @@
     "movie-detail": "./bin/detail-global.js"
   },
   "preferGlobal": true,
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "axios": "^0.18.0",
     "commander": "^2.15.1",

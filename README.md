@@ -29,3 +29,7 @@ Using npm
 ## Authors
 
 * Phong Duong - [phongduong](https://github.com/phongduong)
+
+## License
+
+MIT
