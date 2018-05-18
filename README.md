@@ -21,7 +21,6 @@ Using npm
 
 ## Built with
 
-* [dotenv](https://github.com/motdotla/dotenv)
 * [commander](https://github.com/tj/commander.js)
 * [inquirer](https://github.com/SBoudrias/Inquirer.js)
 * [axios](https://github.com/axios/axios)

@@ -1,35 +1,50 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\phong\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js remove console.table
+  /usr/bin/node /usr/bin/yarn remove dotenv
 
 PATH: 
-  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\phong\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\erl9.2\bin;C:\Program Files (x86)\Elixir\bin;C:\WINDOWS\system32\config\systemprofile\.mix\escripts;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs;C:\Users\phong\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Heroku\bin;C:\Users\phong\AppData\Roaming\npm
+  /home/phong/.asdf/shims:/home/phong/.asdf/bin:/home/phong/bin:/home/phong/.local/bin:/home/phong/bin:/home/phong/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
 
 Yarn version: 
-  1.5.1
+  1.6.0
 
 Node version: 
-  10.0.0
+  8.11.1
 
 Platform: 
-  win32 x64
+  linux x64
+
+Trace: 
+  Error: EACCES: permission denied, unlink '/home/phong/App/movie-info-cli/node_modules/ansi-escapes/package.json'
 
 npm manifest: 
   {
-    "name": "movie-info",
-    "version": "1.0.0",
-    "description": "",
+    "name": "movie-info-cli",
+    "version": "1.1.2",
+    "description": "Simple CLI to get movie information",
     "main": "index.js",
     "scripts": {
       "start": "node index.js",
       "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
-    "author": "",
-    "license": "ISC",
+    "homepage": "https://github.com/phongduong/movie-info#README.md",
+    "bugs": {
+      "url": "https://github.com/phongduong/movie-info/issues"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/phongduong/movie-info.git"
+    },
+    "author": "Phong Duong <phongduong1710@gmail.com>",
+    "bin": {
+      "movie-list": "./bin/list-global.js",
+      "movie-detail": "./bin/detail-global.js"
+    },
+    "preferGlobal": true,
+    "license": "MIT",
     "dependencies": {
       "axios": "^0.18.0",
       "commander": "^2.15.1",
-      "dotenv": "^5.0.1",
       "inquirer": "^5.2.0"
     }
   }
@@ -258,11 +273,3 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/tmp/-/tmp-0.0.33.tgz#6d34335889768d21b2bcda0aa277ced3b1bfadf9"
     dependencies:
       os-tmpdir "~1.0.2"
-
-Trace: 
-  Error: This module isn't specified in a manifest.
-      at new MessageError (C:\Users\phong\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:186:110)
-      at Object.<anonymous> (C:\Users\phong\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:60445:15)
-      at Generator.next (<anonymous>)
-      at step (C:\Users\phong\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:98:30)
-      at C:\Users\phong\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:109:13
