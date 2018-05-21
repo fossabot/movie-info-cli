@@ -8,6 +8,12 @@ Using npm
 
 `npm i -g movie-info-cli`
 
+Using yarn
+
+`yarn global add movie-info-cli`
+
+**Note**: If you can't install by yarn or npm on Linux or Mac. You can use `sudo` to install.
+
 ## Usage
 
 `movie-detail <id> [options]`
