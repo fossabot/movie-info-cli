@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "precommit": "pretty-quick --staged"
   },
   "keywords": [],
   "homepage": "https://github.com/phongduong/movie-info#README.md",
@@ -26,6 +27,11 @@
   "dependencies": {
     "axios": "^0.18.0",
     "commander": "^2.15.1",
-    "inquirer": "^5.2.0"
+    "inquirer": "^5.2.0",
+    "signale": "^1.1.0"
+  },
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "pretty-quick": "^1.6.0"
   }
 }
