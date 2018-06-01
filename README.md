@@ -6,7 +6,11 @@ Simple CLI to get movie info
 
 Using npm
 
-`npm i -g movie-info-cli`
+`sudo npm i -g movie-info-cli`
+
+Using yarn
+
+`sudo yarn global add movie-info-cli`
 
 ## Usage
 
