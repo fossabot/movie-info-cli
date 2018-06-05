@@ -1,7 +1,8 @@
 language: node_js
 node_js:
-- '10.0'
+- 'node'
 deploy:
   provider: npm
   email: phongduong1710@gmail.com
   api_key: 68c27dc0-edb7-4900-9f79-7ac76f911dd9
+script: npm publish
