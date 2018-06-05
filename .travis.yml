@@ -5,4 +5,6 @@ deploy:
   provider: npm
   email: phongduong1710@gmail.com
   api_key: 68c27dc0-edb7-4900-9f79-7ac76f911dd9
+before_script: 
+  npm adduser
 script: npm publish
