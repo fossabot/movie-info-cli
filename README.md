@@ -1,4 +1,6 @@
 # movie-info-cli
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fphongduong%2Fmovie-info-cli.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fphongduong%2Fmovie-info-cli?ref=badge_shield)
+
 
 Simple CLI to get movie info
 
@@ -36,3 +38,6 @@ Using yarn
 ## License
 
 MIT
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fphongduong%2Fmovie-info-cli.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fphongduong%2Fmovie-info-cli?ref=badge_large)
